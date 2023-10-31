@@ -38,6 +38,93 @@
         android:layout_marginTop="45dp"
         android:src="@drawable/ic_user"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Madalena Silva"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/Gainsboro"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Novo anúncio"
+        android:fontFamily="@font/laila"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@+id/containerPhoto"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/Gainsboro"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Meus anúncios"
+        android:fontFamily="@font/laila"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/Gainsboro"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Conversas"
+        android:fontFamily="@font/laila"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/Gainsboro"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Classificações"
+        android:fontFamily="@font/laila"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/Gainsboro"
+        android:fontFamily="@font/laila"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Definições"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="350dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
