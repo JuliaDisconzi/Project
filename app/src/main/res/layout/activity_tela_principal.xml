@@ -112,6 +112,7 @@
         tools:layout_editor_absoluteY="300dp" />
 
     <Button
+        android:id="@+id/definições"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -126,5 +127,26 @@
         tools:layout_editor_absoluteX="20dp"
         tools:layout_editor_absoluteY="350dp" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/ic_home"
+        android:fontFamily="@font/laila"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="655dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/ic_home"
+        android:fontFamily="@font/laila"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="655dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
