@@ -32,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="70dp"
+        android:layout_width="71dp"
         android:layout_height="70dp"
         android:layout_marginStart="45dp"
         android:layout_marginTop="45dp"
