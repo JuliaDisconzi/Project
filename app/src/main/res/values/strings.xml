@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="entrar">Entrar</string>
+    <string name="text_registro">Crie uma conta aqui</string>
+    <string name="descricao_imagem">Descrição da imagem</string>
+    <string name="email_hint">Email</string>
+    <string name="senha_hint">Senha</string>
+    <string name="entrar_button_label">Entrar</string>
+    <string name="entrada_email">Digite seu email</string>
+    <string name="entrada_senha">Digite sua senha</string>
+    <string name="title_registro">Registra-se</string>
+
+
+</resources>
