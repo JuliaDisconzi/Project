@@ -13,6 +13,15 @@
         android:theme="@style/Theme.Project"
         tools:targetApi="31">
         <activity
+            android:name=".FormMensagens"
+            android:exported="false" />
+        <activity
+            android:name=".Form_my_ads"
+            android:exported="false" />
+        <activity
+            android:name=".form_new_ad"
+            android:exported="false" />
+        <activity
             android:name=".FormFeed"
             android:exported="false" />
         <activity
