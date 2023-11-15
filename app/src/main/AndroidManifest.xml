@@ -13,13 +13,19 @@
         android:theme="@style/Theme.Project"
         tools:targetApi="31">
         <activity
+            android:name=".FormPerfil"
+            android:exported="false" />
+        <activity
+            android:name=".form_new_ad"
+            android:exported="false" />
+        <activity
             android:name=".FormMensagens"
             android:exported="false" />
         <activity
             android:name=".Form_my_ads"
             android:exported="false" />
         <activity
-            android:name=".form_new_ad"
+            android:name=".FormRegistro"
             android:exported="false" />
         <activity
             android:name=".FormFeed"
@@ -28,16 +34,16 @@
             android:name=".Feed"
             android:exported="false" />
         <activity
-            android:name=".FormLogin"
+            android:name=".FormClassification"
             android:exported="false" />
         <activity
-            android:name=".FormRegistro"
+            android:name=".TelaPerfil"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".TelaPrincipal"
+            android:name=".FormLogin"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

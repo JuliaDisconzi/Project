@@ -1,8 +1,9 @@
 package pt.iade.juliadisconzi.project;
 
+import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+import pt.iade.juliadisconzi.project.R;
 
 public class FormRegistro extends AppCompatActivity {
 
@@ -11,8 +12,6 @@ public class FormRegistro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_registro);
 
-        getSupportActionBar().hide();
-
-
+        // Se houver alguma lógica específica para esta tela, você pode adicioná-la aqui
     }
 }

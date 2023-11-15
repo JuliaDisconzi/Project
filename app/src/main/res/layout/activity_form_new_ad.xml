@@ -4,147 +4,187 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+
     tools:context=".form_new_ad">
 
-    <View
-        android:layout_width="390dp"
-        android:layout_height="700dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/container_user"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_barra"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        app:srcCompat="@drawable/ultilizador"
+        tools:layout_editor_absoluteY="868dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_barra"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+        app:layout_constraintStart_toStartOf="@+id/mapView"
+        app:srcCompat="@drawable/inicio"
+        tools:layout_editor_absoluteY="868dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_barra"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:srcCompat="@drawable/mensagem"
+        tools:layout_editor_absoluteY="868dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_barra"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/add_perfil"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="868dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_barra"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:srcCompat="@drawable/pesquisar"
+        tools:layout_editor_absoluteY="868dp" />
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/laila_bold"
+
+        android:layout_marginBottom="116dp"
         android:text="Criar novo anúncio"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton5"
+        tools:layout_editor_absoluteX="78dp" />
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
+        android:id="@+id/edit_titulo"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="ex.: Livro Análise de Matemática"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_icones"
+        android:hint="Título"
         android:inputType="text"
+        android:padding="10dp"
         android:textColor="@color/Silver"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="124dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edit_preco"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Título do Anúncio"
-        android:fontFamily="@font/laila_bold"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="105dp" />
+        android:background="@drawable/button_icones"
+        android:hint="Preço"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/Silver"
+        app:layout_constraintBottom_toTopOf="@+id/categorySpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_titulo" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edit_preco2"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Escolha a categoria"
-        android:fontFamily="@font/laila_bold"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="178dp" />
+        android:layout_marginTop="184dp"
+        android:background="@drawable/button_icones"
+        android:hint="Estado"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/Silver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+
+    <EditText
+        android:id="@+id/edit_preco3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_icones"
+        android:hint="Descrição"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/Silver"
+        app:layout_constraintBottom_toTopOf="@+id/edit_preco4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_preco2" />
+
+    <EditText
+        android:id="@+id/edit_preco4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="316dp"
+        android:background="@drawable/button_icones"
+        android:hint="Contacto"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/Silver"
+        app:layout_constraintBottom_toTopOf="@+id/mapView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
 
     <Spinner
         android:id="@+id/categorySpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="105dp"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/button_icones"
         android:entries="@array/category_list"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_preco2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Gainsboro"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="208dp" />
+        tools:layout_editor_absoluteY="568dp" />
 
-    <EditText
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Escreva aqui tudo sobre seu livro"
-        android:inputType="text"
-        android:textColor="@color/Silver"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="282dp" />
-
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Descrição"
-        android:fontFamily="@font/laila_bold"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="251dp" />
-
-
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contacto"
-        android:fontFamily="@font/laila_bold"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="344dp" />
-
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/laila_bold"
-        android:text="localizaçao"
-        android:textSize="10dp"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="376dp" />
-
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/laila_bold"
-        android:text="email"
-        android:textSize="10dp"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="421dp" />
-
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/laila_bold"
-        android:text="Contacto telefonico"
-        android:textSize="10dp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="507dp" />
-
-    <EditText
-        android:id="@+id/editTextPhone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="phone"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="531dp" />
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="436dp" />
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="0dp"
+        android:layout_height="112dp"
+        android:background="@drawable/button_icones"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_camera"
+        tools:layout_editor_absoluteY="63dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

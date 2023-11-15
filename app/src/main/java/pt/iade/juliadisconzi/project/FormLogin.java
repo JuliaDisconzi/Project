@@ -1,32 +1,29 @@
 package pt.iade.juliadisconzi.project;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.Button;
+import androidx.appcompat.app.AppCompatActivity;
+
+import pt.iade.juliadisconzi.project.R;
 
 public class FormLogin extends AppCompatActivity {
-    private TextView text_tela_registro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_login);
 
-        getSupportActionBar().hide();
-        IniciarComponentes();
-        text_tela_registro.setOnClickListener(new View.OnClickListener() {
+        Button btnLogin = findViewById(R.id.bt_entrar);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent= new Intent(FormLogin.this, FormRegistro.class);
+            public void onClick(View v) {
+                // Simulação de login bem-sucedido
+                // Se o login for bem-sucedido, inicie a próxima atividade (FormRegistro)
+                Intent intent = new Intent(FormLogin.this, FormRegistro.class);
                 startActivity(intent);
             }
         });
-    }
-
-    private void IniciarComponentes(){
-        text_tela_registro = findViewById(R.id.text_tela_registro);
     }
 }
