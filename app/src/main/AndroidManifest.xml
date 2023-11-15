@@ -19,6 +19,12 @@
             android:name=".form_new_ad"
             android:exported="false" />
         <activity
+            android:name=".FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/Theme.Project.Fullscreen" />
+        <activity
             android:name=".FormMensagens"
             android:exported="false" />
         <activity
@@ -34,7 +40,7 @@
             android:name=".Feed"
             android:exported="false" />
         <activity
-            android:name=".FormClassification"
+            android:name=".activity.FormLogin"
             android:exported="false" />
         <activity
             android:name=".TelaPerfil"
