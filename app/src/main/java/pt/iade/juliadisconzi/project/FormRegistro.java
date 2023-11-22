@@ -12,6 +12,6 @@ public class FormRegistro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_registro);
 
-        // Se houver alguma lógica específica para esta tela, você pode adicioná-la aqui
+
     }
 }

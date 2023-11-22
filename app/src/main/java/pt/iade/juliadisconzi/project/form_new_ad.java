@@ -12,3 +12,4 @@ public class form_new_ad extends AppCompatActivity {
         setContentView(R.layout.activity_form_new_ad);
     }
 }
+

@@ -15,8 +15,14 @@
     <color name="light_blue_A200">#FF40C4FF</color>
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
-    <item android:color="#FFD700" android:state_checked="true" name="" type="" />
-    <item android:color="#808080" name="" type="" />
+    <color name="beje">#F2E6CE</color> 
+    <color name="marrom_claro">#A6896F</color>
+    <color name="laranja">#F23E2E</color>
+    <color name="laranja_telha">#8C281F</color>
+    <color name="cinza_claro">#F2F4F4</color>
+    <color name="color_feed">#809FA6</color>
+    <color name="color_categorias">#F2B705</color>
+    <color name="azul_escuro">#042940</color>
 
 
 </resources>
