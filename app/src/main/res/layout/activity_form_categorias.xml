@@ -43,300 +43,249 @@
              android:layout_height="match_parent"
              android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_ciencias_sociais"
+            <Button
+                android:id="@+id/btn_ciencias_sociais"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                app:cardBackgroundColor="@color/color_categorias"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp">
-               <TextView
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
-                   android:paddingHorizontal="50dp"
-                   android:text="Ciências Sociais e Humanas"
-                   android:textColor="@color/white"
-                   android:textSize="25dp"
-                   android:textStyle="bold"/>
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_categoria"
+                android:text="Ciências Sociais e Humanas"
+                android:fontFamily="@font/actor"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="50dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
 
-            </androidx.cardview.widget.CardView>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp"/>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_ciencias_extatas_tecnologias"
+            <Button
+                android:id="@+id/btn_ciencias_tecnologia"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                app:cardBackgroundColor="@color/color_categorias"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp">
-               <TextView
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
-                   android:paddingHorizontal="50dp"
-                   android:text="Ciências Exatas e Tecnologia"
-                   android:textColor="@color/white"
-                   android:textSize="25dp"
-                   android:textStyle="bold"/>
-
-            </androidx.cardview.widget.CardView>
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_categoria"
+                android:text="Ciências Exatas e Tecnologia"
+                android:fontFamily="@font/actor"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="50dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
 
             <View
              android:layout_width="match_parent"
              android:layout_height="10dp"/>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_ciencias_saude"
+            <Button
+                android:id="@+id/btn_ciencias_saude"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                app:cardBackgroundColor="@color/color_categorias"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp">
-               <TextView
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
-                   android:paddingHorizontal="50dp"
-                   android:text="Ciências da Saúde"
-                   android:textColor="@color/white"
-                   android:textSize="25dp"
-                   android:textStyle="bold"/>
-
-            </androidx.cardview.widget.CardView>
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_categoria"
+                android:text="Ciências da Saúde"
+                android:fontFamily="@font/actor"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="50dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp"/>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_ciencias_economicas"
+            <Button
+                android:id="@+id/btn_ciencias_economicas_empresariais"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                app:cardBackgroundColor="@color/color_categorias"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp">
-               <TextView
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
-                   android:paddingHorizontal="50dp"
-                   android:text="Ciências Económicas e Empresariais"
-                   android:textColor="@color/white"
-                   android:textSize="25dp"
-                   android:textStyle="bold"/>
-
-            </androidx.cardview.widget.CardView>
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_categoria"
+                android:text="Ciências Econômicas e Empresariais"
+                android:fontFamily="@font/actor"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="50dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp"/>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_ciencias_naturais"
+            <Button
+                android:id="@+id/btn_ciencias_naturais"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                app:cardBackgroundColor="@color/color_categorias"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp">
-               <TextView
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
-                   android:paddingHorizontal="50dp"
-                   android:text="Ciências Naturais"
-                   android:textColor="@color/white"
-                   android:textSize="25dp"
-                   android:textStyle="bold"/>
-
-            </androidx.cardview.widget.CardView>
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_categoria"
+                android:text="Ciências Naturais"
+                android:fontFamily="@font/actor"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="50dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp"/>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_educacao"
+            <Button
+                android:id="@+id/btn_educacao"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                app:cardBackgroundColor="@color/color_categorias"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp">
-               <TextView
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
-                   android:paddingHorizontal="50dp"
-                   android:text="Educação"
-                   android:textColor="@color/white"
-                   android:textSize="25dp"
-                   android:textStyle="bold"/>
-
-            </androidx.cardview.widget.CardView>
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_categoria"
+                android:text="Educação"
+                android:fontFamily="@font/actor"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="50dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp"/>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_artes_humanidades"
+            <Button
+                android:id="@+id/btn_artes_humanidades"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                app:cardBackgroundColor="@color/color_categorias"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp">
-               <TextView
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
-                   android:paddingHorizontal="50dp"
-                   android:text="Artes e Humanidades"
-                   android:textColor="@color/white"
-                   android:textSize="25dp"
-                   android:textStyle="bold"/>
-
-            </androidx.cardview.widget.CardView>
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_categoria"
+                android:text="Artes e Humanidades"
+                android:fontFamily="@font/actor"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="50dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp"/>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_ciencia_ambiental"
+            <Button
+                android:id="@+id/btn_ciencia_ambiental"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                app:cardBackgroundColor="@color/color_categorias"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp">
-               <TextView
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
-                   android:paddingHorizontal="50dp"
-                   android:text="Ciências Ambientais e Sustentabilidade"
-                   android:textColor="@color/white"
-                   android:textSize="25dp"
-                   android:textStyle="bold"/>
-
-            </androidx.cardview.widget.CardView>
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_categoria"
+                android:text="Ciências Ambientais e Sustentabilides"
+                android:fontFamily="@font/actor"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="50dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp"/>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_direito"
+            <Button
+                android:id="@+id/btn_direito"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                app:cardBackgroundColor="@color/color_categorias"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp">
-               <TextView
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
-                   android:paddingHorizontal="50dp"
-                   android:text="Direito"
-                   android:textColor="@color/white"
-                   android:textSize="25dp"
-                   android:textStyle="bold"/>
-
-            </androidx.cardview.widget.CardView>
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_categoria"
+                android:text="Direito"
+                android:fontFamily="@font/actor"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="50dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp"/>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_psicologia"
+            <Button
+                android:id="@+id/btn_psicologia"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                app:cardBackgroundColor="@color/color_categorias"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp">
-               <TextView
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
-                   android:paddingHorizontal="50dp"
-                   android:text="Psicologia"
-                   android:textColor="@color/white"
-                   android:textSize="25dp"
-                   android:textStyle="bold"/>
-
-            </androidx.cardview.widget.CardView>
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_categoria"
+                android:text="Psicologia"
+                android:fontFamily="@font/actor"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="50dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp"/>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_geografia"
+            <Button
+                android:id="@+id/btn_geografia"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                app:cardBackgroundColor="@color/color_categorias"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp">
-               <TextView
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
-                   android:paddingHorizontal="50dp"
-                   android:text="Geografia"
-                   android:textColor="@color/white"
-                   android:textSize="25dp"
-                   android:textStyle="bold"/>
-
-            </androidx.cardview.widget.CardView>
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_categoria"
+                android:text="Geografia"
+                android:fontFamily="@font/actor"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="50dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp"/>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_fotografia"
+            <Button
+                android:id="@+id/btn_fotografia_artes_visuais"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                app:cardBackgroundColor="@color/color_categorias"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp">
-               <TextView
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
-                   android:paddingHorizontal="50dp"
-                   android:text="Fotografia e Artes Visuais"
-                   android:textColor="@color/white"
-                   android:textSize="25dp"
-                   android:textStyle="bold"/>
-
-            </androidx.cardview.widget.CardView>
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_categoria"
+                android:text="Fotigrafia e Artes Visuais"
+                android:fontFamily="@font/actor"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="50dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp"/>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_fotografia"
+            <Button
+                android:id="@+id/btn_ciencia_sociais_aplicadas"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                app:cardBackgroundColor="@color/color_categorias"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp">
-               <TextView
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
-                   android:paddingHorizontal="50dp"
-                   android:text="Ciências Sociais Aplicadas"
-                   android:textColor="@color/white"
-                   android:textSize="25dp"
-                   android:textStyle="bold"/>
-
-            </androidx.cardview.widget.CardView>
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_categoria"
+                android:text="Ciências Sociais Aplicadas"
+                android:fontFamily="@font/actor"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="50dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
 
          </LinearLayout>
 
