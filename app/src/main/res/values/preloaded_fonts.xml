@@ -3,6 +3,7 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/abhaya_libre_medium</item>
         <item>@font/actor</item>
+        <item>@font/dancing_script</item>
         <item>@font/laila</item>
         <item>@font/laila_bold</item>
     </array>
