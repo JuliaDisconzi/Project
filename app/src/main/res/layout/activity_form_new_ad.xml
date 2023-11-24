@@ -5,66 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
+
     tools:context=".form_new_ad">
 
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@drawable/button_barra"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton8"
-        app:srcCompat="@drawable/ultilizador"
-        tools:layout_editor_absoluteY="868dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@drawable/button_barra"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
-        app:layout_constraintStart_toStartOf="@+id/mapView"
-        app:srcCompat="@drawable/inicio"
-        tools:layout_editor_absoluteY="868dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton8"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@drawable/button_barra"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
-        app:srcCompat="@drawable/mensagem"
-        tools:layout_editor_absoluteY="868dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@drawable/button_barra"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/add_perfil"
-        tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="868dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@drawable/button_barra"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
-        app:srcCompat="@drawable/pesquisar"
-        tools:layout_editor_absoluteY="868dp" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_marginBottom="116dp"
         android:text="Criar novo anúncio"
         android:textColor="@color/black"
@@ -174,6 +123,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="568dp" />
+
 
     <ImageButton
         android:id="@+id/imageButton5"

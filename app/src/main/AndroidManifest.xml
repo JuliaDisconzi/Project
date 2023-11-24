@@ -1,3 +1,4 @@
+<<<<<<< Original
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
@@ -16,10 +17,10 @@
             android:name=".FormPerfil"
             android:exported="false" />
         <activity
-            android:name=".form_new_ad"
+            android:name=".FormFeed"
             android:exported="false" />
         <activity
-            android:name=".FullscreenActivity"
+            android:name=".item_anuncio"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
             android:label="@string/title_activity_fullscreen"
@@ -34,13 +35,13 @@
             android:name=".FormRegistro"
             android:exported="false" />
         <activity
-            android:name=".FormFeed"
+            android:name=".form_new_ad"
             android:exported="false" />
         <activity
             android:name=".Feed"
             android:exported="false" />
         <activity
-            android:name=".activity.FormLogin"
+            android:name=".FormLogin"
             android:exported="false" />
         <activity
             android:name=".TelaPerfil"
@@ -64,3 +65,15 @@
     </application>
 
 </manifest>
+=======
+
+    <manifest xmlns:android ="http://schemas.android.com/apk/res/android"
+    >
+    <application>
+    <activity android:name ="pt.iade.juliadisconzi.project.FormItemAnuncio"
+    android:exported="false"
+    
+     />
+    </application>
+    </manifest>
+    >>>>>>> Added

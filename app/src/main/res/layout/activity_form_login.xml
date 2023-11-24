@@ -5,8 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".activity.FormLogin">
+    android:background="@color/azul_escuro"
+
+    tools:context=".FormLogin">
 
     <ImageView
         android:id="@+id/logo"
@@ -19,14 +20,6 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ImageContrastCheck" />
 
-    <View
-        android:id="@+id/containerComponents"
-        style="@style/ContainerComponents"
-        android:layout_marginTop="272dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo" />
-
     <EditText
         android:id="@+id/edit_email"
         style="@style/Edit_Text"
@@ -34,48 +27,38 @@
         android:drawableEnd="@drawable/ic_email"
         android:hint="@string/email_hint"
         android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="@id/containerComponents"
-        app:layout_constraintStart_toStartOf="@id/containerComponents"
-        app:layout_constraintTop_toTopOf="@id/containerComponents"
-        tools:ignore="VisualLintTextFieldSize" />
+        tools:ignore="VisualLintTextFieldSize"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="335dp" />
 
     <EditText
         android:id="@+id/edit_senha"
         style="@style/Edit_Text"
-        android:hint="@string/senha_hint"
-        android:drawableEnd="@drawable/ic_eye"
-        android:inputType="textPassword"
         android:autofillHints="password"
-        app:layout_constraintStart_toStartOf="@id/containerComponents"
-        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        android:drawableEnd="@drawable/ic_eye"
+        android:hint="@string/senha_hint"
+        android:inputType="textPassword"
         app:layout_constraintTop_toBottomOf="@id/edit_email"
-        tools:ignore="VisualLintTextFieldSize" />
+        tools:ignore="VisualLintTextFieldSize"
+        tools:layout_editor_absoluteX="40dp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/bt_entrar"
-        style="@style/Button"
-        android:contentDescription="@string/entrar_button_label"
-        android:text="@string/entrar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edit_senha"
-        tools:ignore="VisualLintButtonSize,TextSizeCheck" />
+
+
 
     <ProgressBar
         android:id="@+id/progressbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/containerComponents" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="590dp" />
 
     <Button
-        android:id="@+id/text_tela_registro"
+        android:id="@+id/button_criar_conta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/button_barra"
         android:text="@string/text_registro"
         android:textColor="@color/black"
@@ -84,6 +67,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/progressbar" />
+
+    <Button
+        android:id="@+id/button_entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:backgroundTint="@color/laranja"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/progressbar"
+        app:layout_constraintEnd_toEndOf="@+id/edit_senha"
+        app:layout_constraintStart_toStartOf="@+id/edit_senha"
+        app:layout_constraintTop_toBottomOf="@+id/edit_senha" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

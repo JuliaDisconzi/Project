@@ -13,7 +13,7 @@ public class FormPerfil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_perfil);
 
-        ImageButton buttonNextScreen = findViewById(R.id.buttonNextScreen); // Encontra o botão pelo ID
+        ImageButton buttonNextScreen = findViewById(R.id.buttonNextScreen);
 
                 buttonNextScreen.setOnClickListener(new View.OnClickListener() {
             @Override

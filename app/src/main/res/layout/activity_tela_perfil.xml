@@ -45,14 +45,6 @@
         tools:layout_editor_absoluteX="84dp"
         tools:layout_editor_absoluteY="100dp" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        app:srcCompat="@drawable/seta_cinza"
-        tools:layout_editor_absoluteX="375dp"
-        tools:layout_editor_absoluteY="88dp" />
-
     <ImageButton
         android:id="@+id/imageButton6"
         android:layout_width="0dp"
@@ -97,22 +89,6 @@
         tools:layout_editor_absoluteX="54dp"
         tools:layout_editor_absoluteY="404dp" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        app:srcCompat="@drawable/seta_cinza"
-        tools:layout_editor_absoluteX="375dp"
-        tools:layout_editor_absoluteY="343dp" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        app:srcCompat="@drawable/seta_cinza"
-        tools:layout_editor_absoluteX="375dp"
-        tools:layout_editor_absoluteY="404dp" />
-
     <ImageButton
         android:id="@+id/imageButton9"
         android:layout_width="0dp"
@@ -135,7 +111,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/add_perfil"
-        tools:layout_editor_absoluteY="142dp" />
+        tools:layout_editor_absoluteY="142dp"
+        android:onClick="startAnuncio"/>
 
 
 
@@ -181,24 +158,8 @@
         tools:layout_editor_absoluteX="54dp"
         tools:layout_editor_absoluteY="285dp" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        app:srcCompat="@drawable/seta_cinza"
-        tools:layout_editor_absoluteX="375dp"
-        tools:layout_editor_absoluteY="223dp" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        app:srcCompat="@drawable/seta_cinza"
-        tools:layout_editor_absoluteX="375dp"
-        tools:layout_editor_absoluteY="285dp" />
-
     <ImageButton
-        android:id="@+id/imageButton11"
+        android:id="@+id/button_feed"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/button_barra"
