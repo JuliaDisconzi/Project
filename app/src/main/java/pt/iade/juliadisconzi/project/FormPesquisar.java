@@ -4,11 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class FormMensagens extends AppCompatActivity {
+public class FormPesquisar extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_form_mensagens);
+        setContentView(R.layout.activity_form_pesquisar);
+
+
+        };
+
     }
-}
