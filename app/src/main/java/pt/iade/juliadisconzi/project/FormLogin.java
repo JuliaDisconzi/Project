@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
+import pt.iade.juliadisconzi.project.views.FormFeed;
+
 public class FormLogin extends AppCompatActivity {
 
     @Override
@@ -25,7 +27,7 @@ public class FormLogin extends AppCompatActivity {
         });
 
         btnentrar.setOnClickListener(new View.OnClickListener() {
-            @Override
+          @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FormLogin.this, FormFeed.class);
                 startActivity(intent);

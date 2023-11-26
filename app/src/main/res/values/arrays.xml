@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="category_list">
-        <item>coisa 1</item>
-        <item>Coisa 2</item>
+        <item>Ciências Naturais e Exatas</item>
+        <item>Ciências Sociais e Humanas</item>
+        <item>Ciências da Saúde e Medicina</item>
+        <item>Educação e Pedagogia</item>
+        <item>Artes e Humanidades</item>
+        <item>Tecnologia da Informação e Computação</item>
+        <item>Direito e Contabilidade</item>
     </string-array>
 
     <string-array name="location_list">
+        <item>Abrantes</item>
+        <item> Águeda</item>
+        <item>Albufeira</item>
+        <item>Alcochete</item>
+        <item>Arruda dos Vinhos</item>
+        <item>Barreiro</item>
+        <item>Covilhã</item>
+        <item>Lourinhã</item>
+        <item>Faro</item>
+        <item>Funchal</item>
         <item>Lisboa</item>
-        <item>Almada</item>
+        <item>Matosinhos</item>
+        <item>Nazaré</item>
+        <item>Póvoa de Varzim</item>
+
+
+
+
     </string-array>
 </resources>

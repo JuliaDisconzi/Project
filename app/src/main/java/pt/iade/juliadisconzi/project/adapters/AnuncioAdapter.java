@@ -1,54 +1,52 @@
 package pt.iade.juliadisconzi.project.adapters;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.List;
 
+import pt.iade.juliadisconzi.project.model.Anuncio;
+import pt.iade.juliadisconzi.project.viewHolder.AnuncioViewHolder;
 import pt.iade.juliadisconzi.project.R;
-import pt.iade.juliadisconzi.project.models.Anuncio;
 
-public class AnuncioAdapter extends RecyclerView.Adapter<AnuncioAdapter.AnuncioViewHolder> {
+public class AnuncioAdapter extends RecyclerView.Adapter<AnuncioViewHolder> {
 
-    private List<Anuncio> listaDeAnuncios;
+    private List<Anuncio> listaanuncios;
 
-    public AnuncioAdapter(List<Anuncio> listaDeAnuncios) {
-        this.listaDeAnuncios = listaDeAnuncios;
+    private int contadorOnCreat =0;
+    private int contadorOnBind =0;
+
+    public AnuncioAdapter(List<Anuncio> lista){
+        listaanuncios = lista;
+
+    }
+
+    @NonNull
+    @Override
+    public AnuncioViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        contadorOnCreat++;
+        Context context = parent.getContext();
+        LayoutInflater inflater = LayoutInflater.from(context);
+
+        View anuncioView = inflater.inflate(R.layout.row_anuncio_list,parent,false);
+        return new AnuncioViewHolder(anuncioView);
     }
 
     @Override
-    public AnuncioViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_lista_anuncio, parent, false);
-        return new AnuncioViewHolder(itemView);
-    }
-
     public void onBindViewHolder(@NonNull AnuncioViewHolder holder, int position) {
-        Anuncio anuncio = listaDeAnuncios.get(position);
-        holder.bind(anuncio);
+        contadorOnBind++;
+        Anuncio anuncio = listaanuncios.get(position);
+        holder.bindData(anuncio);
+
     }
 
     @Override
     public int getItemCount() {
-        return listaDeAnuncios.size();
-    }
-
-    public static class AnuncioViewHolder extends RecyclerView.ViewHolder {
-
-        private final TextView textViewTitulo;
-        private final TextView textViewDescricao;
-
-        public AnuncioViewHolder(@NonNull View itemView) {
-            super(itemView);
-            textViewTitulo = itemView.findViewById(R.id.textView);
-            textViewDescricao = itemView.findViewById(R.id.editTextNumber);
-        }
-
-        public void bind(Anuncio anuncio) {
-            textViewTitulo.setText(anuncio.getTitulo());
-            textViewDescricao.setText(anuncio.getDescricao());
-        }
+        return listaanuncios.size();
     }
 }

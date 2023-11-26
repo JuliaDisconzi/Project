@@ -12,6 +12,12 @@
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="descricao_botao_usuario">imageButton3</string>
+    <string name="descricao_botao_perfil">imageButton2</string>
+    <string name="descricao_home">button_feed2</string>
+    <string name="descricao_botao_msn">imageButton4</string>
+    <string name="descricao_botao_lupa">imageButton7</string>
+    <string name="descricao">imageButton5</string>
 
 
 </resources>
