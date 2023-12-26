@@ -8,9 +8,11 @@
         <item>Artes e Humanidades</item>
         <item>Tecnologia da Informação e Computação</item>
         <item>Direito e Contabilidade</item>
+        <item>Psicologia</item>
     </string-array>
 
     <string-array name="location_list">
+        <item>...</item>
         <item>Abrantes</item>
         <item> Águeda</item>
         <item>Albufeira</item>
@@ -19,15 +21,19 @@
         <item>Barreiro</item>
         <item>Covilhã</item>
         <item>Lourinhã</item>
-        <item>Faro</item>
         <item>Funchal</item>
         <item>Lisboa</item>
         <item>Matosinhos</item>
         <item>Nazaré</item>
-        <item>Póvoa de Varzim</item>
-
-
-
 
     </string-array>
+
+    <string-array name="estado_livro">
+        <item>Novo</item>
+        <item>Usado-Como novo</item>
+        <item>Usado-Em bom estado</item>
+        <item>Usado-Aceitável</item>
+    </string-array>
+
+
 </resources>

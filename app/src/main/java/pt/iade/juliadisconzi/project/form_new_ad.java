@@ -1,7 +1,10 @@
 package pt.iade.juliadisconzi.project;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.content.Intent;
@@ -11,10 +14,11 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-import pt.iade.juliadisconzi.project.R;
+
 import pt.iade.juliadisconzi.project.views.FormFeed;
 
 public class form_new_ad extends AppCompatActivity {
+    private Button btngoanunciar;
 
     private static final int CAMERA_REQUEST_CODE = 22;
 
@@ -23,15 +27,29 @@ public class form_new_ad extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_new_ad);
 
-
-        ImageButton imageButton = findViewById(R.id.imageButton5);
+        ImageButton imageButton5 = findViewById(R.id.imageButton5);
         ImageButton imageButton1 = findViewById(R.id.button_feed2);
         ImageButton imageButton2 = findViewById(R.id.imageButton2);
-        imageButton.setOnClickListener(new View.OnClickListener() {
+
+
+
+        btngoanunciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(form_new_ad.this, FormPesquisar.class);
-                startActivity(intent);
+                startActivity(new Intent(form_new_ad.this, FormAnuncioPronto.class));
+            }
+        });
+        imageButton5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (ContextCompat.checkSelfPermission(form_new_ad.this, android.Manifest.permission.CAMERA)
+                        == PackageManager.PERMISSION_DENIED) {
+                    ActivityCompat.requestPermissions(form_new_ad.this,
+                            new String[]{android.Manifest.permission.CAMERA}, CAMERA_REQUEST_CODE);
+                }
+
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(intent, CAMERA_REQUEST_CODE);
             }
         });
 
@@ -42,18 +60,12 @@ public class form_new_ad extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         imageButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(form_new_ad.this, FormPerfil.class);
                 startActivity(intent);
-            }
-        });
-        imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent, CAMERA_REQUEST_CODE);
             }
         });
 

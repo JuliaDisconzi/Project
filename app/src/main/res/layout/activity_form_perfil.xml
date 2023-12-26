@@ -8,6 +8,22 @@
     tools:context=".FormPerfil">
 
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonNextScreen6"
+        android:layout_width="195dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/botao_telas"
+        android:fontFamily="@font/actor"
+        android:text="Configurações"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonNextScreen4"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNextScreen5" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="133dp"
@@ -90,79 +106,76 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonNextScreen2" />
 
-    <ImageButton
-        android:id="@+id/button_feed2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/home"
-        android:scaleType="fitCenter"
-        android:contentDescription="@string/descricao_home"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonNextScreen4"
+        android:layout_width="195dp"
+        android:layout_height="127dp"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/user"
-        android:scaleType="fitCenter"
-        android:contentDescription="@string/descricao_botao_perfil"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/botao_telas"
+        android:fontFamily="@font/actor"
+        android:text="Classificações recebidas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNextScreen6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNextScreen3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginBottom="1dp"
+        android:gravity="fill_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
-        />
+        app:layout_constraintStart_toStartOf="parent">
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/add_anuncio"
-        android:scaleType="fitCenter"
-        android:contentDescription="@string/descricao_botao_usuario"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
-        app:layout_constraintStart_toEndOf="@+id/imageButton7"
-        />
+        <ImageButton
+            android:id="@+id/button_feed2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/home"
+            android:contentDescription="@string/descricao_home"
+            android:scaleType="fitCenter" />
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/msn"
-        android:scaleType="fitCenter"
-        android:contentDescription="@string/descricao_botao_msn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
-        />
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/lupa"
+            android:contentDescription="@string/descricao_botao_lupa"
+            android:scaleType="fitCenter" />
 
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/lupa"
-        android:scaleType="fitCenter"
-        android:contentDescription="@string/descricao_botao_lupa"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
-        app:layout_constraintStart_toEndOf="@+id/button_feed2"
-        />
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/msn"
+            android:contentDescription="@string/descricao_botao_msn"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/user"
+            android:contentDescription="@string/descricao_botao_perfil"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView2"
