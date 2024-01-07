@@ -7,11 +7,13 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import pt.iade.juliadisconzi.project.views.FormFeed;
+
 public class FormPesquisar extends AppCompatActivity {
 
 
 
-    private ImageButton btnadanuncio;
+    private ImageButton btnvoltar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,12 +26,12 @@ public class FormPesquisar extends AppCompatActivity {
 
         }
         private void setupComponents(){
-            btnadanuncio = findViewById(R.id.ad_anuncio);
+            btnvoltar = findViewById(R.id.botao_voltar);
 
-            btnadanuncio.setOnClickListener(new View.OnClickListener() {
+            btnvoltar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(FormPesquisar.this, form_new_ad.class));
+                    startActivity(new Intent(FormPesquisar.this, FormFeed.class));
                 }
             });
         }

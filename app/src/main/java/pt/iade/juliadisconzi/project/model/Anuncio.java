@@ -1,9 +1,11 @@
 package pt.iade.juliadisconzi.project.model;
 
+import android.content.Context;
 import android.graphics.drawable.Drawable;
 
 import java.util.ArrayList;
-import java.util.List;
+
+import pt.iade.juliadisconzi.project.R;
 
 public class Anuncio {
 
@@ -12,16 +14,19 @@ public class Anuncio {
     private String preco;
     private Drawable imagem;
 
-    public Anuncio(int id, String descricao) {
+    public Anuncio(int id, String descricao, String preco, Drawable imagem) {
         this.id = id;
         this.descricao = descricao;
+        this.preco = preco;
+        this.imagem = imagem;
     }
 
-    public static ArrayList<Anuncio> List() {
+    public static ArrayList<Anuncio> List(Context context) {
         ArrayList<Anuncio> listaanuncios = new ArrayList<>();
 
-        for (int i = 0; i < 100; i++) {
-            listaanuncios.add(new Anuncio(i,String.valueOf(i)));
+        for (int i = 0; i < 1; i++) {
+            Drawable drawable = context.getDrawable(R.drawable.livro2);
+            listaanuncios.add(new Anuncio(i, "Livro Algoritmos e lógica de programação em C " + i, "5€ " + i, drawable));
         }
 
         return listaanuncios;

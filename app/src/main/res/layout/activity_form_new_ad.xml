@@ -90,7 +90,7 @@
         app:layout_constraintTop_toBottomOf="@+id/estado_livro" />
 
     <EditText
-        android:id="@+id/edit_preco4"
+        android:id="@+id/edit_contacto"
         android:layout_width="390dp"
         android:layout_height="65dp"
         android:layout_marginStart="16dp"
@@ -200,7 +200,7 @@
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_preco4" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_contacto" />
 
     <Button
         android:id="@+id/button_anunciar"

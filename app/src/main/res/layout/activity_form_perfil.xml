@@ -8,30 +8,12 @@
     tools:context=".FormPerfil">
 
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonNextScreen6"
-        android:layout_width="195dp"
-        android:layout_height="127dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/botao_telas"
-        android:fontFamily="@font/actor"
-        android:text="Configurações"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonNextScreen4"
-        app:layout_constraintTop_toBottomOf="@+id/buttonNextScreen5" />
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="133dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="139dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="139dp"
-        android:fontFamily="@font/dancing_script"
+        android:fontFamily="@font/bad_script"
         android:text="Perfil"
         android:textColor="@color/white"
         android:textSize="60sp"
@@ -112,13 +94,11 @@
         android:layout_height="127dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="5dp"
         android:background="@drawable/botao_telas"
         android:fontFamily="@font/actor"
         android:text="Classificações recebidas"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/buttonNextScreen6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonNextScreen3" />
 
@@ -156,7 +136,7 @@
             android:scaleType="fitCenter" />
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/btn_mensagem"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="4dp"

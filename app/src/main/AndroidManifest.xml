@@ -18,6 +18,12 @@
         android:theme="@style/Theme.Project"
         tools:targetApi="31">
         <activity
+            android:name=".item_message"
+            android:exported="false" />
+        <activity
+            android:name=".FormChat"
+            android:exported="false" />
+        <activity
             android:name=".FormConversas"
             android:exported="false" />
         <activity

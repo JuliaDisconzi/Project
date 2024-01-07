@@ -5,20 +5,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+
     tools:context=".FormPesquisar">
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/barra_pesquisar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_width="346dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:background="@color/white"
+        android:background="@color/cinza_claro"
         android:queryHint="Pesquisar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botao_voltar"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -39,86 +39,120 @@
         app:layout_constraintTop_toBottomOf="@+id/barra_pesquisar" />
 
 
-    <Spinner
-        android:id="@+id/categorySpinner"
-        android:layout_width="390dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+    <Button
+        android:id="@+id/cien_natural"
+        android:layout_width="408dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="33dp"
+        android:text="Ciências Naturais e Exatas"
+        android:textSize="20dp"
         android:background="@drawable/barra_padrao"
-        android:entries="@array/category_list"
-        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_categorias" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="fill_horizontal"
-        android:layout_marginBottom="4dp"
-        android:gravity="fill_horizontal|center_vertical"
-        android:orientation="horizontal"
-        android:paddingHorizontal="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/cien_social"
+        android:layout_width="408dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:text="Ciências Sociais e Humanas"
+        android:textSize="20dp"
+        android:background="@drawable/barra_padrao"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cien_natural" />
 
-        <ImageButton
-            android:id="@+id/button_feed2"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="4dp"
-            android:layout_weight="1"
-            android:background="@drawable/home"
-            android:contentDescription="@string/descricao_home"
-            android:scaleType="fitCenter" />
+    <Button
+        android:id="@+id/cien_social2"
+        android:layout_width="408dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:text="Ciências da Saúde e Medicina"
+        android:textSize="20dp"
+        android:background="@drawable/barra_padrao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cien_social" />
 
-        <ImageButton
-            android:id="@+id/imageButton7"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
-            android:layout_weight="1"
-            android:background="@drawable/lupa"
-            android:contentDescription="@string/descricao_botao_lupa"
-            android:scaleType="fitCenter" />
+    <Button
+        android:id="@+id/cien_social3"
+        android:layout_width="408dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:text="Educação e Pedagogia"
+        android:textSize="20dp"
+        android:background="@drawable/barra_padrao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cien_social2" />
 
-        <ImageButton
-            android:id="@+id/ad_anuncio"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
-            android:layout_weight="1"
-            android:background="@drawable/add_anuncio"
-            android:contentDescription="@string/descricao_botao_usuario"
-            android:scaleType="fitCenter" />
+    <Button
+        android:id="@+id/cien_social4"
+        android:layout_width="408dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:text="Artes e Humanidades"
+        android:textSize="20dp"
+        android:background="@drawable/barra_padrao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cien_social3" />
 
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
-            android:layout_weight="1"
-            android:background="@drawable/msn"
-            android:contentDescription="@string/descricao_botao_msn"
-            android:scaleType="fitCenter" />
+    <Button
+        android:id="@+id/cien_social5"
+        android:layout_width="408dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:text="Tecnologia da Informação e Computação"
+        android:textSize="20dp"
+        android:background="@drawable/barra_padrao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cien_social4" />
 
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="4dp"
-            android:layout_weight="1"
-            android:background="@drawable/user"
-            android:contentDescription="@string/descricao_botao_perfil"
-            android:scaleType="fitCenter" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/cien_social6"
+        android:layout_width="408dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:text="Direito e Contabilidade"
+        android:textSize="20dp"
+        android:background="@drawable/barra_padrao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cien_social5" />
+
+    <Button
+        android:id="@+id/cien_social7"
+        android:layout_width="408dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:text="Psicologia"
+        android:textSize="20dp"
+        android:background="@drawable/barra_padrao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cien_social6" />
+
+    <ImageButton
+        android:id="@+id/botao_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/barra_pesquisar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/seta_voltar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
